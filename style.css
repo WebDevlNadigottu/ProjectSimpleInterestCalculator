@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+    background-color: #456;
+    color: #ffff;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(44, 71, 245, 0.6);
+    padding: 12px 6px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+input, button {
+    width: 90%;
+    height:20px;
+    margin-bottom: 15px;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+} 
+#calcBtn {
+    width: 94%;
+    height: 38px;
+    border: none;
+    background-color: #456;
+    color: #fff;
+    font-size: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+#calcBtn:hover {
+    background-color: rgb(55, 216, 216);
+    color: blue;
+}
+
+#resultBox {
+    width: 90%;
+    height: 0;
+    transition: all 0.7s ease-in;
+}
+#resultBox.show {
+    height: 250px;
+}
+h2 {
+    display: flex; 
+    align-items: center;
+    font-family: arial;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+#resultBox.show h2{
+    opacity: 1;
+}
+h2 span {
+    flex: 0.5;  /*it is just like cols 0f 30%  */
+    font-size: 18px;
+    text-align: right;
+}
+h2 span:nth-child(even){
+    flex: 0.7;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 16px;
+    color: #eff307;
+}
